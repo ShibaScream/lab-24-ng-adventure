@@ -1,6 +1,6 @@
 const HTMLPlugin = require('html-webpack-plugin')
 module.exports = {
-  entry: './app',
+  entry: `${__dirname}/app`,
   output: {
     filename: 'bundle.js',
     path: `${__dirname}/build`,
@@ -23,8 +23,8 @@ module.exports = {
       template: `${__dirname}/app/index.html`,
     }),
   ],
-  resolve: {
-    modules: ['node_modules']
-  },
-  target: 'web'
+  // resolve: {
+  //   modules: ['node_modules']
+  // },
+  // target: 'web'
 }
